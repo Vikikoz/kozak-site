@@ -1,0 +1,82 @@
+.center-logo {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement dans son conteneur */
+    position: fixed; /* Fixe le logo en haut même en scrollant */
+    top: 20px; /* Distance depuis le haut */
+    left: 50%; /* Centre le logo horizontalement */
+    transform: translateX(-50%); /* Ajuste pour un centrage parfait */
+    width: 100%; /* Permet de garder le centrage sur toute la largeur */
+    z-index: 1000; /* S'assure que le logo est au-dessus des autres éléments */
+}
+
+.nav-logo {
+    height: 100px; /* Ajuste la taille du logo */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Centre verticalement */
+    gap: 20px; /* Espacement entre les liens */
+}
+
+.logo-container {
+    flex: 0; /* Permet au logo de rester au centre */
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+
+/* Centrer la section sous le logo */
+.landing-section {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    justify-content: center; /* Centre verticalement */
+    align-items: center; /* Centre horizontalement */
+    text-align: center; /* Centre le texte */
+    height: calc(100vh - 150px); /* Ajuste la hauteur en fonction du logo */
+    margin-top: 150px; /* Décale la section pour ne pas être cachée par le logo */
+}
+
+/* Style du texte */
+.main-message h1 {
+    font-family: 'Mulish', sans-serif; /* Applique la police */
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.main-message p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+}
+
+
+
+
+/* Appliquer la police à tout le site */
+body {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500; /* Medium */
+    color: #333; /* Couleur du texte */
+}
+
+/* Appliquer aux titres */
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+/* Style des paragraphes */
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
